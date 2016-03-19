@@ -66,5 +66,20 @@ namespace XInputScanner
                 textBoxLog.AppendText("Finished!\n");
             });
         }
+
+        private void licenseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html");
+        }
+
+        private void sourceCodeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/mrexodia/XInputScanner");
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("XInputScanner v1.0\n\nWritten by: mrexodia\nLicense: GPLv2", "About");
+        }
     }
 }
