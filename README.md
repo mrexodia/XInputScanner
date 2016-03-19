@@ -12,6 +12,10 @@ XInputScanner is a simple tool that tries to figure out how to name your `xinput
 
 A directory scan only searches in DLL and EXE files. Scanning different file types is supported, but only when scanning a single file.
 
+## Download
+
+You can get the latest version from the [GitHub Releases](https://github.com/mrexodia/XInputScanner/releases).
+
 ## Compiling
 
 1. Clone the project (make sure to [clone submodules](http://stackoverflow.com/questions/3796927/how-to-git-clone-including-submodules));
