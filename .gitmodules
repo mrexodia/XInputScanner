@@ -1,0 +1,3 @@
+[submodule "Yara.NET"]
+	path = Yara.NET
+	url = https://github.com/jellever/Yara.NET.git

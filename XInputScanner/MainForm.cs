@@ -26,7 +26,11 @@ namespace XInputScanner
                 if (!e.Data.GetDataPresent(DataFormats.FileDrop))
                     return;
                 var filePaths = e.Data.GetData(DataFormats.FileDrop) as string[];
-                Task.Run(() => _scanner.ScanFiles(filePaths, checkBoxRecursive.Checked));
+                Task.Run(() =>
+                {
+                    _scanner.ScanFiles(filePaths, checkBoxRecursive.Checked);
+                    textBoxLog.AppendText("Finished!\n");
+                });
             };
         }
 
@@ -42,7 +46,11 @@ namespace XInputScanner
             if (dialog.ShowDialog() != DialogResult.OK)
                 return;
 
-            Task.Run(() => _scanner.ScanFile(dialog.FileName));
+            Task.Run(() =>
+            {
+                _scanner.ScanFile(dialog.FileName);
+                textBoxLog.AppendText("Finished!\n");
+            });
         }
 
         private void buttonSelectDirectory_Click(object sender, EventArgs e)
@@ -52,7 +60,11 @@ namespace XInputScanner
             if (dialog.ShowDialog() != DialogResult.OK)
                 return;
 
-            Task.Run(() => _scanner.ScanDirectory(dialog.SelectedPath, checkBoxRecursive.Checked));
+            Task.Run(() =>
+            {
+                _scanner.ScanDirectory(dialog.SelectedPath, checkBoxRecursive.Checked);
+                textBoxLog.AppendText("Finished!\n");
+            });
         }
     }
 }

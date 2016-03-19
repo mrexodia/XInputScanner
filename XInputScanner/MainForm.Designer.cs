@@ -39,7 +39,7 @@
             // 
             this.buttonSelectDirectory.Location = new System.Drawing.Point(12, 40);
             this.buttonSelectDirectory.Name = "buttonSelectDirectory";
-            this.buttonSelectDirectory.Size = new System.Drawing.Size(181, 23);
+            this.buttonSelectDirectory.Size = new System.Drawing.Size(162, 23);
             this.buttonSelectDirectory.TabIndex = 0;
             this.buttonSelectDirectory.Text = "Select &Directory";
             this.buttonSelectDirectory.UseVisualStyleBackColor = true;
@@ -50,11 +50,11 @@
             this.checkBoxRecursive.AutoSize = true;
             this.checkBoxRecursive.Checked = true;
             this.checkBoxRecursive.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBoxRecursive.Location = new System.Drawing.Point(199, 44);
+            this.checkBoxRecursive.Location = new System.Drawing.Point(180, 44);
             this.checkBoxRecursive.Name = "checkBoxRecursive";
-            this.checkBoxRecursive.Size = new System.Drawing.Size(74, 17);
+            this.checkBoxRecursive.Size = new System.Drawing.Size(93, 17);
             this.checkBoxRecursive.TabIndex = 1;
-            this.checkBoxRecursive.Text = "&Recursive";
+            this.checkBoxRecursive.Text = "&Subdirectories";
             this.checkBoxRecursive.UseVisualStyleBackColor = true;
             // 
             // textBoxLog
